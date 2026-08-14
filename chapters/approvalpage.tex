@@ -1,0 +1,68 @@
+%Endorsement page
+\newpage
+\addcontentsline{toc}{chapter}{ENDORSEMENT PAGE}
+\newgeometry{top=2cm, left=2cm, right=2cm, bottom=1.2cm, includefoot, footskip=0.8cm}
+
+{%
+% ============================================================
+% This block is INTENTIONALLY isolated from the main document preamble:
+% - font is forced to Times New Roman (ptm), not following other \usepackage
+% - \parskip, \parindent, \linespread are reset to standard LaTeX defaults,
+%   so that blank lines in source do NOT get additional spacing from
+%   the preamble (e.g., global \setlength{\parskip}{...})
+% - All vertical spacing ONLY comes from explicit \vspace below;
+%   there is no implicit spacing from paragraph changes.
+% ============================================================
+    \fontfamily{ptm}\fontseries{m}\fontshape{n}\fontsize{12}{14.4}\selectfont
+    \setlength{\parskip}{0pt}%
+    \setlength{\parindent}{0pt}%
+    \renewcommand{\baselinestretch}{1}\selectfont%
+    \begin{center}
+    \begin{singlespace}
+    \textbf{\fontseries{b}\selectfont APPROVAL PAGE}\par
+    \textbf{\fontseries{b}\selectfont FINAL PROJECT}\par
+    \vspace{\baselineskip}
+    \textbf{\fontseries{b}\selectfont \titleen}\par
+    \vspace{\baselineskip}
+    \vspace{8pt}
+    \textbf{\fontseries{b}\selectfont Prepared by:}\par
+    \vspace{8pt}
+    \authorname\par
+    \studentid\par
+    Study Program \studyprogram\par
+    \vspace{2\baselineskip}
+    \textbf{\fontseries{b}\selectfont Has been defended and accepted by the Examination Committee}\par
+    \textbf{\fontseries{b}\selectfont as one of the requirements for obtaining the Applied Bachelor's Degree}\par
+    Examination Date: \endorsementdate\par
+    \vspace{\baselineskip}
+    \textbf{\fontseries{b}\selectfont Chair Examiner}\par
+    \vspace{2\baselineskip}
+    \chairexaminer\par
+    NIP. \NIPchairexaminer\par
+    \vspace{\baselineskip}
+    \textbf{\fontseries{b}\selectfont Secretary Examiner / Supervisor}\par
+    \vspace{2\baselineskip}
+    \supervisor\par
+    NIP. \NIPsupervisor\par
+    \vspace{\baselineskip}
+    \textbf{\fontseries{b}\selectfont Examiner Member}\par
+    \vspace{2\baselineskip}
+    \examinermenber\par
+    NIP. \NIPexaminermember\par
+    \vspace{2\baselineskip}
+    \textbf{\fontseries{b}\selectfont Head of Study Program \studyprogram}\par
+    \vspace{2\baselineskip}
+    \programhead\par
+    NIP. \NIPprogramhead\par
+    \vspace{\baselineskip}
+    \hspace{2cm}Date of Approval: \underline{\hspace{2.5cm}}\par
+    \textbf{\fontseries{b}\selectfont Acknowledged by,}\par
+    \textbf{\fontseries{b}\selectfont Head of \department}\par
+    \vspace{3\baselineskip}
+    \departmenthead\par
+    NIP. \NIPdepthead\par
+    \end{singlespace}
+    \end{center}
+}
+
+\restoregeometry
